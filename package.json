@@ -1,5 +1,5 @@
 {
-    "name": "@sivrad/package-name",
+    "name": "@sivrad/matrix",
     "version": "1.0.0",
     "description": "PACKAGE_DESCRIPTION",
     "main": "./dist/index.js",

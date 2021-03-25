@@ -1,7 +1,10 @@
-/*
- * File: index.ts
- * Created:
- * ----
- * Copyright: 2020 Nix² Technologies
- * Author: name (name@nix2.io)
- */
+import { Matrix } from './matrix';
+import { Schema } from './schema';
+
+const m = new Matrix();
+const s = new Schema(m, {
+    name: 'thing',
+    label: 'Thing',
+});
+
+console.log(s);
