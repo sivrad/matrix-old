@@ -39,7 +39,7 @@ export class Schema {
      */
     // Used to maintain syntax highlighting in VSCode.
     // prettier-ignore
-    private getSchemaValue(
+    private static getSchemaValue(
         schema: SerializedSchema,
         key: keyof SerializedSchema,
         defaultValue: SerializedSchema[keyof SerializedSchema] | null = null,
@@ -67,7 +67,7 @@ export class Schema {
                 | SerializedSchema[keyof SerializedSchema]
                 | null = null,
         ): typeof defaultValue =>
-            this.getSchemaValue(schema, key, defaultValue);
+            Schema.getSchemaValue(schema, key, defaultValue);
         // Sets the instance variables.
         this.name = get('name', REQUIRED) as string;
         this.label = get('label', formatAsLabel(this.name)) as string;
