@@ -15,7 +15,8 @@
         "test": "mocha -r ts-node/register tests/**",
         "lint": "eslint src/**",
         "mk-docs": "typedoc --name \"Documentation\" && touch ./docs/.nojekyll",
-        "prepublish": "tsc"
+        "prepublish": "tsc",
+        "build": "ts-node ./scripts/build.ts"
     },
     "devDependencies": {
         "@nix2/prettier-config": "^1.0.2",
